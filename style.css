@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  background: #040924;
+  overflow-y: hidden;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 42rem;
+  height: fit-content;
+  margin-top: 15vh;
+  padding: 4.8rem 6.4rem;
+
+  background: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+label {
+  font-weight: 400;
+  font-size: 1.4rem;
+
+  display: block;
+
+  margin: 3vh 0 1vh;
+}
+
+.input-style {
+  display: block;
+
+  background: #dce2e9;
+  border: 1px solid rgba(73, 80, 87, 0.3);
+  border-radius: 0.4rem;
+
+  width: 30rem;
+  height: 5.2rem;
+  padding-left: 1.4rem;
+}
+
+#submit {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #fff;
+
+  width: 30rem;
+  height: 5.2rem;
+  margin-top: 6vh;
+
+  background: #02799d;
+  border: none;
+  border-radius: 0.4rem;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background: #05607b;
+}
+
+/* Modal */
+
+.modal-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 3.2rem;
+
+  background: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+
+  width: 36rem;
+  height: 15rem;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  margin-top: -90vh;
+
+  position: relative;
+
+  padding: 50vh 0 60vh;
+
+  background: rgba(0, 0, 0, 0.7);
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#btn-close {
+  position: relative;
+  bottom: 5rem;
+  left: 3.8rem;
+
+  border: none;
+  background: none;
+}
+
+#btn-close:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+}
+
+/* Alert */
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+
+  width: 100%;
+  height: 3.6rem;
+
+  background: #f03e3e;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.alert-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hide {
+  display: none;
+}

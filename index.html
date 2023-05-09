@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- prettier-ignore -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+    <script src="./js/main.js" type="module" defer></script>
+    <title>IMC Calculator</title>
+  </head>
+  <body>
+    <!-- Alert -->
+    <div class="alert">
+      <p>Digite somente números</p>
+    </div>
+
+    <main>
+      <div class="card">
+        <form action="#">
+          <fieldset>
+            <legend>Cálculo de IMC</legend>
+
+            <label for="weight">Peso (kg)</label>
+            <input
+              type="text"
+              id="weight"
+              class="input-style"
+              placeholder="60"
+              maxlength="3"
+              required />
+
+            <label for="height"> Altura (cm)</label>
+            <input
+              type="text"
+              id="height"
+              class="input-style"
+              placeholder="165"
+              maxlength="3"
+              required />
+
+            <input type="submit" id="submit" value="Calcular IMC  ➞" />
+          </fieldset>
+        </form>
+      </div>
+    </main>
+
+    <!-- Modal result -->
+    <div class="modal">
+      <div class="modal-card">
+        <p id="modal-msg">Seu IMC é X</p>
+        <button id="btn-close">
+          <img src="assets/close.svg" alt="Close icon" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
