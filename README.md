@@ -25,7 +25,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<p> A IMC (BMI) calculator, with a modal that displays the result and a stylized error alert. </p>
+<p> An IMC (BMI) calculator, with a modal that displays the result and a stylized error alert. </p>
 
 <p align="center"><img src = "assets/project.gif" alt="Project image" height="400"></p>
 <br><br>
